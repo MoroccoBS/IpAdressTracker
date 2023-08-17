@@ -16,7 +16,7 @@ function MarkerComponent({ Lat, Lng }: MarkerProps) {
     iconAnchor: [iconAnchor[0], iconSize[1]],
     popupAnchor: [0, -45],
   });
-  const position = useMemo(() => {
+  const position: L.LatLngExpression = useMemo(() => {
     return [Lat, Lng];
   }, [Lat, Lng]);
   const map = useMap();
