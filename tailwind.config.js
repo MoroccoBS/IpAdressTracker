@@ -10,8 +10,8 @@ export default {
       fontFamily: "Rubik",
     },
     backgroundImage: {
-      Mobile: "url('pattern-bg-desktop.png')",
-      Desktop: "url('pattern-bg-mobile.png')",
+      Mobile: "url('./public/pattern-bg-desktop.png')",
+      Desktop: "url('./public/pattern-bg-mobile.png')",
     },
   },
   plugins: [],
