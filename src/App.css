@@ -44,3 +44,12 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.data {
+  @media (max-height: 840px) {
+    top: 41vh;
+  }
+  @media (max-height: 640px) {
+    top: 50vh;
+  }
+}
