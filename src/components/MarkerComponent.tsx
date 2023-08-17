@@ -31,7 +31,7 @@ function MarkerComponent({ Lat, Lng }: MarkerProps) {
     <>
       <Marker icon={customIcon} position={position}>
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+          This is you're location. <br /> YIPEEE!!.
         </Popup>
       </Marker>
     </>
