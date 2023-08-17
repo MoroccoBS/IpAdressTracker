@@ -1,6 +1,8 @@
 import Arrow from "../assets/images/icon-arrow.svg";
 import { useMediaQuery } from "react-responsive";
 import "../App.css";
+import patternBgDesktop from "../assets/images/pattern-bg-desktop.png";
+import patternBgMobile from "../assets/images/pattern-bg-mobile.png";
 
 interface InputFieldProps {
   onClick?: (event: React.FormEvent) => void;
@@ -9,13 +11,16 @@ interface InputFieldProps {
 }
 
 function InputField({ onClick, InputRef, Loading }: InputFieldProps) {
-  const isMobile = useMediaQuery({ minWidth: 767 });
-  const backgroundImage = isMobile ? "bg-Mobile" : "bg-Desktop";
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const backgroundImage = isMobile
+    ? `url(${patternBgMobile})`
+    : `url(${patternBgDesktop})`;
 
   return (
     <>
       <div
-        className={`relative z-10 w-full h-2/5 ${backgroundImage} bg-center bg-no-repeat bg-cover flex flex-col items-center md:p-12 md:gap-14 p-4 gap-2`}
+        className={`relative z-10 w-full h-2/5 bg-center bg-no-repeat bg-cover flex flex-col items-center md:p-12 md:gap-14 p-4 gap-2`}
+        style={{ backgroundImage }}
       >
         <h1 className="text-white lg:text-4xl text-2xl font-medium">
           IP Address Tracker
