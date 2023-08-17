@@ -31,7 +31,7 @@ function InputField({ onClick, InputRef, Loading }: InputFieldProps) {
           className="md:w-3/6 w-full h-14 rounded-xl flex overflow-hidden"
         >
           <input
-            className="w-full h-full outline-none p-5 text-lg"
+            className=" w-full h-full outline-none p-5 text-lg"
             type="text"
             placeholder="Search for any IP address or domain"
             ref={InputRef}

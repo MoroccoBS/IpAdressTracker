@@ -49,7 +49,10 @@ body {
   @media (max-height: 840px) {
     top: 41vh;
   }
-  @media (max-height: 640px) {
+  @media (max-height: 644px) {
     top: 50vh;
+  }
+  @media (max-height: 550px) {
+    top: 200%;
   }
 }
